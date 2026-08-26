@@ -105,3 +105,40 @@ a {
 .btn-primary:hover {
   background-color: var(--color-primary-light);
 }
+
+/* Secciones generales */
+
+main section {
+  padding: 3.5rem 0;
+}
+
+main section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Como funciona */
+
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 250px;
+  background-color: var(--color-bg-alt);
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
