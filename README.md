@@ -1,4 +1,6 @@
-# Asistente Institucional Inteligente
+# AIda
+
+**A**sistente **I**nstitucional **D**e **A**lumnos
 
 Trabajo Final – Tecnicatura Universitaria en Programación – UTN FRT
 
@@ -24,7 +26,7 @@ El sistema no es únicamente un chatbot. El núcleo es una plataforma de gestió
 - La respuesta humana se incorpora automáticamente a la base de conocimiento.
 - Métricas: preguntas más frecuentes, temas sin cobertura, tiempos de respuesta, consumo y costo.
 
-### B. Asistente conversacional con IA (estudiantes e ingresantes)
+### B. AIda, el asistente conversacional con IA (estudiantes e ingresantes)
 
 - Responde consultas en lenguaje natural, 24 horas, citando siempre la fuente oficial y su fecha de actualización.
 - Distingue dos tipos de consulta: los datos exactos (fechas de mesas, correlativas, aranceles) se resuelven por consulta directa a la base de datos; los procedimientos y reglamentos se responden recuperando el documento oficial correspondiente.
