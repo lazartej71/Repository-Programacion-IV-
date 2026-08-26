@@ -187,3 +187,21 @@ main section h2 {
   margin: 0 auto;
   color: var(--color-text-light);
 }
+
+/* Footer */
+
+.site-footer {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin-bottom: 0.25rem;
+}
+
+.equipo-list {
+  color: #cfe0ee;
+}
