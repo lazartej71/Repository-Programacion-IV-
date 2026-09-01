@@ -10,7 +10,6 @@
       name="description"
       content="AIda es el asistente institucional de la UTN FRT. Consultá mesas de examen, inscripciones, correlativas y trámites académicos las 24 horas, con fuente oficial citada."
     />
-
     <meta
       name="keywords"
       content="AIda, UTN FRT, mesas de examen, inscripciones, correlativas, trámites académicos, asistente institucional, Tucumán"
@@ -30,6 +29,14 @@
     />
     <meta property="og:type" content="website" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
 
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -39,7 +46,7 @@
       <div class="container header-content">
         <div class="logo-container">
           <img
-            src="img/logo-utn.png"
+            src="img/logoAIda.png"
             alt="Logo de la UTN Facultad Regional Tucumán"
             class="logo-img"
           />
@@ -59,6 +66,7 @@
     </header>
 
     <main>
+      <!-- Hero -->
       <section id="inicio" class="hero">
         <div class="container hero-content">
           <div class="hero-text">
@@ -70,20 +78,16 @@
             </p>
             <a href="#asistente" class="btn-primary">Consultar ahora</a>
           </div>
-          <div class="hero-image">
-            <img
-              src="img/hero-illustration.svg"
-              alt="Ilustración de un asistente virtual conversacional"
-            />
-          </div>
         </div>
       </section>
 
+      <!-- Cómo funciona -->
       <section id="como-funciona" class="como-funciona">
         <div class="container">
           <h2>Cómo funciona</h2>
           <div class="cards-grid">
             <article class="card">
+              <div class="card-icon">📊</div>
               <h3>Datos exactos</h3>
               <p>
                 Fechas de mesas, correlativas y aranceles se resuelven por
@@ -91,6 +95,7 @@
               </p>
             </article>
             <article class="card">
+              <div class="card-icon">📄</div>
               <h3>Procedimientos y reglamentos</h3>
               <p>
                 Se responden recuperando el documento oficial correspondiente,
@@ -98,6 +103,7 @@
               </p>
             </article>
             <article class="card">
+              <div class="card-icon">🛑</div>
               <h3>Política de abstención</h3>
               <p>
                 Si el asistente no tiene evidencia suficiente, no inventa una
@@ -108,31 +114,62 @@
         </div>
       </section>
 
+      <!-- Temas -->
       <section id="temas" class="temas">
         <div class="container">
           <h2>Temas que cubre</h2>
           <ul class="temas-grid">
-            <li>Mesas de examen</li>
-            <li>Inscripciones</li>
-            <li>Correlativas</li>
-            <li>Trámites administrativos</li>
-            <li>Ingreso de nuevos estudiantes</li>
-            <li>Calendario académico</li>
+            <li>📅 Mesas de examen</li>
+            <li>📝 Inscripciones</li>
+            <li>🔗 Correlativas</li>
+            <li>📋 Trámites administrativos</li>
+            <li>🎓 Ingreso de nuevos estudiantes</li>
+            <li>🗓️ Calendario académico</li>
           </ul>
         </div>
       </section>
 
+      <!-- Asistente conversacional -->
       <section id="asistente" class="asistente">
         <div class="container">
           <h2>Asistente conversacional</h2>
           <p>
-            Acá se va a integrar el widget de chat, disponible las 24 horas para
-            estudiantes e ingresantes.
+            Consultá las 24 horas, los 7 días de la semana. El asistente te
+            responderá con información oficial y te derivará al panel si es
+            necesario.
           </p>
-          <div class="chat-placeholder">Widget de chat (próximamente)</div>
+          <div class="chat-mockup">
+            <div class="chat-header">
+              <span class="chat-avatar">💬</span>
+              <span class="chat-title">AIda</span>
+              <span class="chat-status">● En línea</span>
+            </div>
+            <div class="chat-messages">
+              <div class="message received">
+                <div class="bubble">Hola, soy AIda. ¿En qué puedo ayudarte?</div>
+                <span class="time">10:30</span>
+              </div>
+              <div class="message sent">
+                <div class="bubble">¿Cuándo es la próxima mesa de examen de Análisis Matemático?</div>
+                <span class="time">10:31</span>
+              </div>
+              <div class="message received">
+                <div class="bubble">
+                  La próxima mesa de Análisis Matemático es el <strong>15 de noviembre</strong>.
+                  Podés consultar el calendario completo en <a href="#">este enlace</a>.
+                </div>
+                <span class="time">10:31</span>
+              </div>
+            </div>
+            <div class="chat-input">
+              <input type="text" placeholder="Escribí tu consulta..." disabled />
+              <button disabled>➤</button>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- Panel institucional -->
       <section id="panel" class="panel">
         <div class="container">
           <h2>Panel institucional</h2>
@@ -141,6 +178,20 @@
             actualización de información oficial, bandeja de consultas
             priorizadas derivadas por el asistente, y métricas de uso.
           </p>
+          <div class="panel-features">
+            <div class="panel-item">
+              <span class="panel-icon">📥</span>
+              <span>Carga de datos</span>
+            </div>
+            <div class="panel-item">
+              <span class="panel-icon">📩</span>
+              <span>Bandeja de consultas</span>
+            </div>
+            <div class="panel-item">
+              <span class="panel-icon">📈</span>
+              <span>Métricas y reportes</span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -148,14 +199,19 @@
     <footer id="equipo" class="site-footer">
       <div class="container footer-content">
         <div class="footer-info">
-          <p>Universidad Tecnológica Nacional – Facultad Regional Tucumán</p>
-          <p>Tecnicatura Universitaria en Programación – Trabajo Final</p>
+          <p class="footer-utn">Universidad Tecnológica Nacional – Facultad Regional Tucumán</p>
+          <p class="footer-carrera">Tecnicatura Universitaria en Programación – Trabajo Final</p>
           <p class="equipo-list">
             Lazarte, Jorge Exequiel · Díaz, Juan Gabriel
           </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="LinkedIn">🔗</a>
+          </div>
         </div>
         <div class="footer-logo">
-          <img src="img/logo-utn-footer.png" alt="Logo UTN FRT" />
+          <img src="img/logoAIda.png" alt="Logo UTN FRT" />
         </div>
       </div>
     </footer>
