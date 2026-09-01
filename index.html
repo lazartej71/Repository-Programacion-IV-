@@ -1,123 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AIda, el asistente institucional de la UTN FRT: consultá mesas de examen, inscripciones, correlativas y trámites académicos las 24 horas, con fuente oficial citada.">
-  <meta name="keywords" content="AIda, UTN FRT, mesas de examen, inscripciones, correlativas, trámites académicos, asistente institucional, Tucumán">
-  <meta name="author" content="Lazarte, Jorge Exequiel - Díaz, Juan Gabriel">
-  <title>AIda | Asistente Institucional UTN FRT</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <header class="site-header">
-    <div class="container header-content">
-      <span class="logo">AIda</span>
-      <nav class="nav">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#como-funciona">Cómo funciona</a></li>
-          <li><a href="#temas">Temas</a></li>
-          <li><a href="#asistente">Asistente</a></li>
-          <li><a href="#panel">Panel institucional</a></li>
-          <li><a href="#equipo">Equipo</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <title>AIda | Asistente Institucional UTN FRT</title>
 
-  <main>
+    <meta
+      name="description"
+      content="AIda es el asistente institucional de la UTN FRT. Consultá mesas de examen, inscripciones, correlativas y trámites académicos las 24 horas, con fuente oficial citada."
+    />
+    <meta
+      name="keywords"
+      content="AIda, UTN FRT, mesas de examen, inscripciones, correlativas, trámites académicos, asistente institucional, Tucumán"
+    />
+    <meta
+      name="author"
+      content="Lazarte, Jorge Exequiel - Díaz, Juan Gabriel"
+    />
 
-    <section id="inicio" class="hero">
-      <div class="container">
-        <h1>AIda, el asistente institucional de la UTN FRT</h1>
-        <p class="subtitle">
-          Sistema de gestión de consultas y conocimiento académico con panel web
-          y asistente conversacional basado en IA para la Facultad Regional Tucumán.
-        </p>
-        <a href="#asistente" class="btn-primary">Consultar ahora</a>
+    <meta
+      property="og:title"
+      content="AIda | Asistente Institucional UTN FRT"
+    />
+    <meta
+      property="og:description"
+      content="Consultá mesas de examen, inscripciones, correlativas y trámites académicos con AIda, el asistente de la UTN FRT."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="logo-container">
+          <img
+            src="img/logoAIda.png"
+            alt="Logo de la UTN Facultad Regional Tucumán"
+            class="logo-img"
+          />
+          <span class="logo">AIda</span>
+        </div>
+        <nav class="nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#temas">Temas</a></li>
+            <li><a href="#asistente">Asistente</a></li>
+            <li><a href="#panel">Panel institucional</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section id="como-funciona" class="como-funciona">
-      <div class="container">
-        <h2>Cómo funciona</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Datos exactos</h3>
-            <p>
-              Fechas de mesas, correlativas y aranceles se resuelven por consulta
-              directa a la base de datos, no por generación de texto.
+    <main>
+      <!-- Hero -->
+      <section id="inicio" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>AIda, el asistente institucional de la UTN FRT</h1>
+            <p class="subtitle">
+              Sistema de gestión de consultas y conocimiento académico con panel
+              web y asistente conversacional basado en IA para la Facultad
+              Regional Tucumán.
             </p>
-          </article>
-          <article class="card">
-            <h3>Procedimientos y reglamentos</h3>
-            <p>
-              Se responden recuperando el documento oficial correspondiente,
-              citando siempre la fuente y su fecha de actualización.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Política de abstención</h3>
-            <p>
-              Si el asistente no tiene evidencia suficiente, no inventa una
-              respuesta: deriva la consulta al panel institucional.
-            </p>
-          </article>
+            <a href="#asistente" class="btn-primary">Consultar ahora</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cómo funciona -->
+      <section id="como-funciona" class="como-funciona">
+        <div class="container">
+          <h2>Cómo funciona</h2>
+          <div class="cards-grid">
+            <article class="card">
+              <div class="card-icon">📊</div>
+              <h3>Datos exactos</h3>
+              <p>
+                Fechas de mesas, correlativas y aranceles se resuelven por
+                consulta directa a la base de datos, no por generación de texto.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-icon">📄</div>
+              <h3>Procedimientos y reglamentos</h3>
+              <p>
+                Se responden recuperando el documento oficial correspondiente,
+                citando siempre la fuente y su fecha de actualización.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card-icon">🛑</div>
+              <h3>Política de abstención</h3>
+              <p>
+                Si el asistente no tiene evidencia suficiente, no inventa una
+                respuesta: deriva la consulta al panel institucional.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Temas -->
+      <section id="temas" class="temas">
+        <div class="container">
+          <h2>Temas que cubre</h2>
+          <ul class="temas-grid">
+            <li>📅 Mesas de examen</li>
+            <li>📝 Inscripciones</li>
+            <li>🔗 Correlativas</li>
+            <li>📋 Trámites administrativos</li>
+            <li>🎓 Ingreso de nuevos estudiantes</li>
+            <li>🗓️ Calendario académico</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Asistente conversacional -->
+      <section id="asistente" class="asistente">
+        <div class="container">
+          <h2>Asistente conversacional</h2>
+          <p>
+            Consultá las 24 horas, los 7 días de la semana. El asistente te
+            responderá con información oficial y te derivará al panel si es
+            necesario.
+          </p>
+          <div class="chat-mockup">
+            <div class="chat-header">
+              <span class="chat-avatar">💬</span>
+              <span class="chat-title">AIda</span>
+              <span class="chat-status">● En línea</span>
+            </div>
+            <div class="chat-messages">
+              <div class="message received">
+                <div class="bubble">Hola, soy AIda. ¿En qué puedo ayudarte?</div>
+                <span class="time">10:30</span>
+              </div>
+              <div class="message sent">
+                <div class="bubble">¿Cuándo es la próxima mesa de examen de Análisis Matemático?</div>
+                <span class="time">10:31</span>
+              </div>
+              <div class="message received">
+                <div class="bubble">
+                  La próxima mesa de Análisis Matemático es el <strong>15 de noviembre</strong>.
+                  Podés consultar el calendario completo en <a href="#">este enlace</a>.
+                </div>
+                <span class="time">10:31</span>
+              </div>
+            </div>
+            <div class="chat-input">
+              <input type="text" placeholder="Escribí tu consulta..." disabled />
+              <button disabled>➤</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel institucional -->
+      <section id="panel" class="panel">
+        <div class="container">
+          <h2>Panel institucional</h2>
+          <p>
+            Herramienta para Bedelía, Alumnado y Secretaría: carga y
+            actualización de información oficial, bandeja de consultas
+            priorizadas derivadas por el asistente, y métricas de uso.
+          </p>
+          <div class="panel-features">
+            <div class="panel-item">
+              <span class="panel-icon">📥</span>
+              <span>Carga de datos</span>
+            </div>
+            <div class="panel-item">
+              <span class="panel-icon">📩</span>
+              <span>Bandeja de consultas</span>
+            </div>
+            <div class="panel-item">
+              <span class="panel-icon">📈</span>
+              <span>Métricas y reportes</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="equipo" class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-info">
+          <p class="footer-utn">Universidad Tecnológica Nacional – Facultad Regional Tucumán</p>
+          <p class="footer-carrera">Tecnicatura Universitaria en Programación – Trabajo Final</p>
+          <p class="equipo-list">
+            Lazarte, Jorge Exequiel · Díaz, Juan Gabriel
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="LinkedIn">🔗</a>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <img src="img/logoAIda.png" alt="Logo UTN FRT" />
         </div>
       </div>
-    </section>
-
-    <section id="temas" class="temas">
-      <div class="container">
-        <h2>Temas que cubre</h2>
-        <ul class="temas-list">
-          <li>Mesas de examen</li>
-          <li>Inscripciones</li>
-          <li>Correlativas</li>
-          <li>Trámites administrativos</li>
-          <li>Ingreso de nuevos estudiantes</li>
-          <li>Calendario académico</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="asistente" class="asistente">
-      <div class="container">
-        <h2>Asistente conversacional</h2>
-        <p>
-          Acá se va a integrar el widget de chat, disponible las 24 horas
-          para estudiantes e ingresantes.
-        </p>
-        <div class="chat-placeholder">
-          Widget de chat (próximamente)
-        </div>
-      </div>
-    </section>
-
-    <section id="panel" class="panel">
-      <div class="container">
-        <h2>Panel institucional</h2>
-        <p>
-          Herramienta para Bedelía, Alumnado y Secretaría: carga y actualización
-          de información oficial, bandeja de consultas priorizadas derivadas por
-          el asistente, y métricas de uso.
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer id="equipo" class="site-footer">
-    <div class="container">
-      <p>Universidad Tecnológica Nacional – Facultad Regional Tucumán</p>
-      <p>Tecnicatura Universitaria en Programación – Trabajo Final</p>
-      <p class="equipo-list">
-        Lazarte, Jorge Exequiel · Díaz, Juan Gabriel
-      </p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
